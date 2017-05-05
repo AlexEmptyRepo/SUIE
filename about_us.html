@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="final-project.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home_index.html">HOME</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="community_members.html">Community Members</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <h2 id="countdown-to-next">Countdown To Our Next Meeting!</h2>
+  <div id="clockdiv">
+       <p class="days"></p><br>
+       <p class="hours"></p><br>
+       <p class="minutes"></p><br>
+       <p class="seconds"></p>
+  </div>
+
+
+  <script type="text/javascript">
+/* Code adapted from: Basic Javascript Countdown Clock (Yaphi Berhanu, August 28, 2015) */
+  var deadline = 'September 4 2017 17:00:00 GMT-0500';
+
+  function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+  function initializeClock(id, endtime){
+    var clock = document.getElementById(id);
+    var timeinterval = setInterval(function(){
+      var t = getTimeRemaining(endtime);
+      clock.innerHTML =  t.days  + ' days, ' +
+                         t.hours  + ' hours, ' +
+                         t.minutes  + ' minutes, ' +
+                         t.seconds +' seconds ';
+      if(t.total<=0){
+        clearInterval(timeinterval);
+      }
+    },1000);
+  }
+    initializeClock('clockdiv', deadline);
+
+</script>
+
+    <div>
+        <div class="text-over-pic">
+            <h3> Founded in September of 2010, SUIE is a UNC student organization aimed at empowering, informing and creating active discussion and awareness of issues facing immigrants in the United States today. Such issues include the protection of basic human rights and advocacy for equality regardless of national origin or documentation status. </h3>
+        </div>
+        <img class="pic-bkg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/UNC_cubes.jpg/800px-UNC_cubes.jpg" alt="UNC Cubesin the Pit">
+
+    </div>
+
+    <div >
+      <div class="text-over-pic">
+              <h3> Through events and meetings, SUIE aims to:<br><br>
+                <ol>
+                    <li><strong>Promote </strong> equal access to higher education for all students by asking our legislators to vote in favor of policies that will eliminate the barriers to higher education for immigrants.</li> <br>
+                    <li><strong> Organize </strong> community members to fight against discriminatory laws that target specific communities, in particular to the immigrant community.</li> <br>
+                    <li><strong>Push </strong> for a just and comprehensive immigration reform that would make the process for naturalization more attainable for immigrants.</li> <br>
+                    <li><strong>Increase </strong> awareness of social justice issues, specifically those concerning the immigrant population.</li> </h3>
+                <ol>
+      </div>
+
+        <img class="pic-bkg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_David_Library%2C_UNC_Chapel_Hill.JPG/450px-The_David_Library%2C_UNC_Chapel_Hill.JPG" alt="UNC Davis Library">
+    </div>
+
+    <div >
+      <div class="text-over-pic">
+            <h3> SUIE’s vision is to empower, inform, and activate the immigrant community, its allies, and the greater public about the issues that prevent immigrants in the United States from being able to enjoy
+              the protection of basic human rights granted under the U.S. Constitution. We advocate for immigrant issues to be recognized as human rights issues through the promotion of the ideals that stress equality
+              of all people regardless of national origin or documentation status. </h3>
+      </div>
+        <img class="pic-bkg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/All_Rise_Wikipedia_Editathon_at_UNC_Chapel_Hill_04.jpg/800px-All_Rise_Wikipedia_Editathon_at_UNC_Chapel_Hill_04.jpg" alt"UNC Students Working">
+    </div>
+
+    <div >
+        <div class="text-over-pic">
+              <h3> Meetings are every <b>Tuesday</b> in the Campus Y Room 208 at 5 pm! </h3>
+        </div>
+        <img class="pic-bkg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/UNC_School_of_Law.jpg/800px-UNC_School_of_Law.jpg" alt="UNC Law School Building">
+    </div>
+
+</div>
+
+
+<footer>
+<p id="footer-text">All Intellectual Property based on: <b>Students United for Immigration Equality® </b></p>
+<p id="footer-text">Find Us at The University of North Carolina at Chapel Hill, 180 E Cameron Ave, Chapel Hill, NC 27514<p>
+  <div class="soc-icons-foot">
+    <a  target="_blank" title="find us on Twitter" href="https://twitter.com/uncsuie?lang=en"><img alt="Find us on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+    <a  target="_blank" title="find us on facebook" href="https://www.facebook.com/pg/UNCSUIE/about/?ref=page_internal"><img alt="Find Us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+    <a  target="_blank" title="find us on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="Find Us on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+    <a  target="_blank" title="find us on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="Find Us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+    <a  target="_blank" title="find us on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="Find Us on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+  </div>
+</footer>
+
+</body>

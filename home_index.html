@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="final-project.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Patua+One|Roboto|Permanent+Marker|Chewy" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home_index.html">HOME</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="community_members.html">Community Members</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div >
+    <div class="text-over-homegif">
+      <p> We are <span id="rotate">this</span></p>
+      <a href="about_us.html" class="btn btn-primary">Learn More Now</a>
+    </div>
+    <img class="animated-gif" src="http://68.media.tumblr.com/92f74683bec8fd6d7369ebcc03a4ed59/tumblr_ognsj52Hh71sm7zt9o1_500.gif">
+</div>
+
+
+<script type="text/javascript">
+/* Code adapted from: Changing Text in Span (Nick Craver May 5, 2010) */
+var terms = ["Students", "\xa0 United", "For Immigration", "For Equality", "\xa0 S  U  I  E."];
+
+function rotateTerm() {
+  var countt = $("#rotate").data("term") || 0;
+  $("#rotate").data("term", countt == terms.length -1 ? 0 : countt + 1).text(terms[countt]).fadeIn()
+              .delay(3000).fadeOut(300, rotateTerm);
+
+}
+$(rotateTerm);
+</script>
+
+
+    <footer>
+      <p id="footer-text">All Intellectual Property based on: <b>Students United for Immigration Equality® </b></p>
+      <p id="footer-text">Find Us at The University of North Carolina at Chapel Hill, 180 E Cameron Ave, Chapel Hill, NC 27514<p>
+        <div class="soc-icons-foot">
+          <a  target="_blank" title="find us on Twitter" href="https://twitter.com/uncsuie?lang=en"><img alt="Find us on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+          <a  target="_blank" title="find us on facebook" href="https://www.facebook.com/pg/UNCSUIE/about/?ref=page_internal"><img alt="Find Us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+          <a  target="_blank" title="find us on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="Find Us on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+          <a  target="_blank" title="find us on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="Find Us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+          <a  target="_blank" title="find us on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="Find Us on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+        </div>
+    </footer>
+
+
+</body>

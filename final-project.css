@@ -1,0 +1,197 @@
+
+body {
+    position: relative;
+}
+#section1 {
+  padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;
+}
+
+#section2 {
+  padding-top:50px;height:500px;color: #fff; background-color: #673ab7;
+}
+
+#section3 {
+  padding-top:50px;height:500px;color: #fff; background-color: #ff9800;
+}
+
+#myNavbar{
+  text-align: center;
+  float: right;
+  margin: 0% 5%;
+  font-size: 130%;
+  font-family: 'Patua One', cursive;
+
+}
+
+#clockdiv{
+  padding: 1%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Baloo', cursive;
+}
+
+#countdown-to-next{
+  padding-top: 5%;
+  text-align: center;
+  font-family: 'Baloo', cursive;
+}
+
+img.pic-bkg{
+  width: 100%;
+  height: 50%;
+  filter: blur(2.5px);
+}
+
+
+.text-over-pic {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  align-content: center;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 8%;
+  padding-left: 11%;
+  margin: 340px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+  filter: alpha(opacity=60);
+  filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+}
+
+.container-fluid {
+  background-color:#660000;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
+ .myCarousel{
+   margin-left: 7%;
+   margin-top: 12%;
+   padding: 2px;
+   align-content: center;
+   display:inline-block;
+ }
+
+ #caro-photo{
+   margin-left: 24%;
+ }
+
+ #caro-photo1{
+   height:600px;
+   margin-left: 21%;
+ }
+
+ #intro-subs{
+   padding: 10%;
+ }
+ #intro-h3{
+   text-align: center;
+ }
+
+ .soc-media-1{
+   width: 23%;
+   height: 35%;
+   margin-left: 7%;
+   margin-top: 12%;
+   padding: 2px;
+   align-content: center;
+   display:inline-block;
+ }
+
+ .page-desc{
+   padding: 10%;
+   font-size: 25px;
+ }
+ .page-desc h2{
+   text-align: center;
+   align-content: center;
+ }
+
+ li a:hover {
+   background-color: lightblue;
+ }
+
+ li a:visited {
+     color: purple;
+ }
+
+ #map {
+   height: 600px;
+   margin: 0 auto;
+   width: 90%;
+   margin-bottom: 20%;
+   filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+  }
+
+  #map-title{
+    text-align: center;
+    padding-top: 5%
+  }
+
+  img.animated-gif{
+  width: 100%;
+  height: auto%;
+  filter: blur(5px);
+  }
+
+  .btn{
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      width:400px;
+  }
+
+  .btn-secondary{
+      width: 200px;
+  }
+
+  .text-over-homegif {
+    z-index: 100;
+    position: absolute;
+    color:  white;
+    align-content: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 10%;
+    padding-left: 20%;
+    margin: 12%;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+    filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+    font-family: 'Patua One', cursive;
+  }
+
+
+ .container-fluid {
+   background-color:#660000;
+   background-image: none;
+   background-repeat: no-repeat;
+  }
+
+ #footer-text{
+     text-align: center;
+     font-size: 15px;
+     padding-top: 5px;
+ }
+
+ .soc-icons-foot{
+   padding:10px;
+   padding-left: 44.5%;
+ }
+
+ form{
+   padding: 20%;
+   padding-top: 5%;
+   justify-content: center;
+ }
+
+ footer{
+   width: 100%;
+   background-color: gray;
+   height: 140px;
+   align-content: center;
+ }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscribe!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="final-project.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home_index.html">HOME</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="community_members.html">Community Members</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img id="caro-photo1" src="https://upload.wikimedia.org/wikipedia/commons/0/06/ICE.XCheckII.arrest.jpg" alt="ICE Agents Take Immigrants at Staggering Rates">
+      <div class="carousel-caption">
+        <h3>Immigration and Customs Enforcement </h3>
+        <p>In February 2017, 680 Immigrants were arrested in 11 states</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img id="caro-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/A_day_without_immigrants_-_Mexican_and_American_flags.jpg/800px-A_day_without_immigrants_-_Mexican_and_American_flags.jpg" alt="Mexican and American Flags">
+      <div class="carousel-caption">
+        <h3>A 2006 Study showed</h3>
+        <p>Only 26% of North Carolina's Immigrants were Naturalized Citizens!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img id="caro-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Immigration_Schild.jpg/798px-Immigration_Schild.jpg" alt="Immigration at the Border">
+      <div class="carousel-caption">
+        <h3>SUIE is here</h3>
+        <p>To bridge the gap and fight for equality!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div id="intro-subs">
+  <h2 id="intro-h2">
+  Enter your information below to be subscribed to our monthy newsletter. UNC-Chapel Hill students who wish to join the group
+  should also enter their information below to be placed on our group roster and listserv. Community Members and students should feel
+  free to stop by the Campus Y on Tuesday Nights for more information or to sit in on one of our meetings.
+  </h2>
+  <p id="intro-h3">
+  <strong>Welcome to the SUIE Family!</strong>
+  </p>
+</div>
+
+
+
+<!--nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+<form>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your First and Last Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Your email will only be used to contact you with relevant information</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">Select Your Age Range </label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Prefer Not To Answer</option>
+      <option>0-18</option>
+      <option>19-25</option>
+      <option>26-35</option>
+      <option>36-50</option>
+      <option>51-75</option>
+      <option>75+</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect2">Select All that appply to you using ctrl</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>I am a UNC-Chapel Hill Student</option>
+      <option>I am a University Student in the Triangle</option>
+      <option>I am a Member of a Raleigh-Durham-Chapel Hill Community</option>
+      <option>I am an Undocumented Immigrant to the United States</option>
+      <option>I am documented but need assistance with forms and paperwork</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Enter any specific concerns you could use help with</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    <small id="fileHelp" class="form-text text-muted">Do you have any documents that you would like professional assistance with?</small>
+  </div>
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Subscribe to our monthly Newsletter
+    </label>
+  </div>
+  <button type="submit" class="btn btn-secondary">Submit</button>
+</form>
+
+
+
+<!--nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+<footer>
+<p id="footer-text">All Intellectual Property based on: <b>Students United for Immigration Equality® </b></p>
+<p id="footer-text">Find Us at The University of North Carolina at Chapel Hill, 180 E Cameron Ave, Chapel Hill, NC 27514<p>
+  <div class="soc-icons-foot">
+    <a  target="_blank" title="find us on Twitter" href="https://twitter.com/uncsuie?lang=en"><img alt="Find us on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+    <a  target="_blank" title="find us on facebook" href="https://www.facebook.com/pg/UNCSUIE/about/?ref=page_internal"><img alt="Find Us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+    <a  target="_blank" title="find us on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="Find Us on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+    <a  target="_blank" title="find us on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="Find Us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+    <a  target="_blank" title="find us on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="Find Us on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+  </div>
+</footer>
+
+</body>

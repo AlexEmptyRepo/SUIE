@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Community Members</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="final-project.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home_index.html">HOME</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="community_members.html">Community Members</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<a href="https://www.facebook.com/pg/UNCSUIE/about/?ref=page_internal">
+  <img class="soc-media-1" src ="final-project-images/facebook_graphicdesign.jpg" alt="Find Us On Facebook">
+</a>
+
+<a href="instagram.asp">
+  <img class="soc-media-1" src ="final-project-images/instagram_graphicdesign.jpg" alt="Find Us on Instagram">
+</a>
+
+<a href="https://twitter.com/uncsuie?lang=en">
+  <img class="soc-media-1" src ="final-project-images/twitter_graphicdesign.jpg" alt="Find Us on Twitter">
+</a>
+
+
+  <div class="page-desc">
+      <h2> SUIE is here to serve the Raleigh-Durham-Chapel Hill Community! </h2><br>
+      <p> SUIE has been assiting immigrants to this region, both documented and undocumented, for nearly
+          10 years. We are highly visible in the community and advocate for equal rights for immigrants to this country. Our
+          group is comprised of immigrants themselves, so we understand, firsthand, the experience and struggle you may be facing.
+          We regularly host events to benefit the community such as awareness nights, fundraising
+          dinners, contacting local officials on behalf of individuals with language barriers, free consultations
+          with immigration attorneys, as well as providing general advice to those in
+          need of help obtaining documentation.
+      </p><br><br>
+      <div class="comm-links">
+        <p> Links that may assist you:
+          <ul>
+            <li><a href="https://www.fns.usda.gov/sites/default/files/Non-Citizen_Guidance_063011.pdf">Supplemental Nutritional Assistance Information for Undocumented Immigrants</a></li>
+            <li><a href="http://www.ncjustice.org/?q=immigrants-and-refugees"> North Carolina Justice Center </a></li>
+            <li><a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/search?state=NC"> Immigration Advocates NC Resources</a></li>
+            <li><a href="https://www.afsc.org/resource/nc-immigrant-rights-program">NC Immigrant Rights Program</a></li>
+            <li><a href="http://sogpubs.unc.edu/electronicversions/pg/pgfal08/article4.pdf"> Immigrants in NC Fact Sheet </a></li>
+            <li><a href="http://www.elon.edu/e-web/academics/elon_academy/Undocumented%20Resources.xhtml"> Information For Undocumented Students at Elon University </a></li>
+            <li><a href="http://uleadnet.org/map/north-carolina-policy"> ULead Immigration Network in NC </a></li>
+          </ul>
+
+      </div>
+  </div>
+
+
+    <h1 id="map-title"> Come Find Us at <b>The Campus Y</b>: <br>
+         The University of North Carolina at Chapel Hill, 180 E Cameron Ave, Chapel Hill, NC 27514
+    </h1>
+
+    <div id="map"></div>
+
+    <script>
+    /* googleapis */
+      function initMap() {
+        var uluru = {lat: 35.911331, lng: -79.051147};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvxP1XzSviv_unduDwnTOF8VHi-OJD1Bo&callback=initMap">
+    </script>
+
+
+<footer>
+    <p id="footer-text">All Intellectual Property based on: <b>Students United for Immigration Equality® </b></p>
+    <p id="footer-text">Find Us at The University of North Carolina at Chapel Hill, 180 E Cameron Ave, Chapel Hill, NC 27514<p>
+      <div class="soc-icons-foot">
+        <a  target="_blank" title="find us on Twitter" href="https://twitter.com/uncsuie?lang=en"><img alt="Find us on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+        <a  target="_blank" title="find us on facebook" href="https://www.facebook.com/pg/UNCSUIE/about/?ref=page_internal"><img alt="Find Us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+        <a  target="_blank" title="find us on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="Find Us on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+        <a  target="_blank" title="find us on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="Find Us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+        <a  target="_blank" title="find us on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="Find Us on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+      </div>
+</footer>
+
+
+</body>
